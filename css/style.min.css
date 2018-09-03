@@ -9663,3 +9663,9 @@ html.lb-disable-scrolling {
     z-index: 9999999;
     background-color: #fff
 }
+
+.thin {
+    border: 0;
+    height: 1px;
+    background: #333;
+}
