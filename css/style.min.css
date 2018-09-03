@@ -5231,17 +5231,6 @@ ul {
     }
 }
 
-.parts .part4 {
-    background-position: 0 -708px;
-    min-height: 240px;
-    margin-top: -638px
-}
-
-@media only screen and (max-width:768px) {
-    .parts .part4 {
-        margin-top: 0
-    }
-}
 
 .parts .part5 {
     background-position: 0 -995px;
