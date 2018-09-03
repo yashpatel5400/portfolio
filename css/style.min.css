@@ -3942,19 +3942,6 @@ ul {
     padding: 300px 0 120px 0;
     padding: 30rem 0 12rem 0
 }
-
-@media only screen and (max-width:768px) {
-    #section-levitating .section-1-fallback,
-    #section-levitating .video {
-        background: url(../video/section-1-poster.jpg);
-        background-size: cover;
-        background-position: center
-    }
-    #section-levitating video {
-        display: none
-    }
-}
-
 @media only screen and (max-width:768px) {
     #section-use .section-2-fallback,
     #section-use .video {
@@ -5135,6 +5122,113 @@ ul {
     -ms-transform: translate(0, -2px);
     -o-transform: translate(0, -2px);
     transform: translate(0, -2px)
+}
+
+.tech-spec__desc a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #777;
+    letter-spacing: .2em;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    position: relative;
+    padding: 0 0 5px 10px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.tech-spec__desc a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: transparent;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.tech-spec__desc a:hover:before {
+    background-color: #777
+}
+
+.tech-spec__desc a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: transparent;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.tech-spec__desc a:hover:after {
+    background-color: #777
+}
+
+.tech-spec__desc a.active,
+.tech-spec__desc a:hover {
+    color: #777;
+    text-decoration: none
+}
+
+.tech-spec__desc a.active {
+    position: relative;
+    padding: 0 0 5px 10px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.tech-spec__desc a.active:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #777;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.tech-spec__desc a.active:hover:before {
+    background-color: #777
+}
+
+.tech-spec__desc a.active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #777;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.tech-spec__desc a.active:hover:after {
+    background-color: #777
 }
 
 .parts {
