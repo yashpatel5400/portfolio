@@ -1,11 +1,6 @@
-var express = require('express')
-var app = express()
-var path = require("path");
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/App';
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname + '/index.html'));
-})
-
-app.use(express.static(__dirname));
-
-module.exports = app
+require('./favicon.ico');
+render(<App />, document.getElementById("app"));

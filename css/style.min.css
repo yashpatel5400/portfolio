@@ -1409,7 +1409,7 @@ hr {
 }
 
 .hp__box {
-    width: 100%;
+    width: 50%;
     height: auto;
     -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(250, 250, 250, .5)))
 }
