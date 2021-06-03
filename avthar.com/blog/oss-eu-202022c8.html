@@ -1,0 +1,416 @@
+<!doctype html>
+<html amp>
+
+<!-- Mirrored from avthar.com/blog/oss-eu-2020?format=amp by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jun 2021 01:54:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>Purpose-built observability solutions using open-source software (Open Source Summit Europe 2020)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="oss-eu-2020.html">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Purpose-built observability solutions using open-source software (Open Source Summit Europe 2020)",
+      "mainEntityOfPage": "https://avthar.com",
+      "description": "Talk Recording, Slides and Resources from my talk at Open Source Summit Europe 2020",
+      "url": "https://avthar.com/blog/oss-eu-2020",
+      "author": {
+        "@type": "Person",
+        "name": "Avthar Sewrathan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "name": "Avthar Sewrathan"
+      },
+      
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvLuCTgGxUat1hWt6wmf1JX52nHwwMr3Dp4YLLquh0b3xg7mbl4MHoUvQXEiotQDc/OSS_ELC_EU20_102020_Snackables_v1-01.jpg?format=750w",
+        "width": 640,
+        "height": 334
+      },
+      
+      "datePublished": "2020-10-26",
+      "dateModified": "2020-10-26"
+    }
+  </script>
+  <script async src="../../cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-youtube" src="../../cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="../index.html" target="_blank">Avthar Sewrathan</a></h1>
+      <small class="amp-view-original"><a href="oss-eu-2020.html" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+        <amp-img
+          class="amp-article-main-image"
+          layout="responsive"
+          width="640"
+          height="334"
+          src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-z/OSS_ELC_EU20_102020_Snackables_v1-013794.jpg?format=500w"
+          srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvLuCTgGxUat1hWt6wmf1JX52nHwwMr3Dp4YLLquh0b3xg7mbl4MHoUvQXEiotQDc/OSS_ELC_EU20_102020_Snackables_v1-01.jpg?format=2500w 2500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvLuCTgGxUat1hWt6wmf1JX52nHwwMr3Dp4YLLquh0b3xg7mbl4MHoUvQXEiotQDc/OSS_ELC_EU20_102020_Snackables_v1-01.jpg?format=1500w 1500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvLuCTgGxUat1hWt6wmf1JX52nHwwMr3Dp4YLLquh0b3xg7mbl4MHoUvQXEiotQDc/OSS_ELC_EU20_102020_Snackables_v1-01.jpg?format=1000w 1000w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvLuCTgGxUat1hWt6wmf1JX52nHwwMr3Dp4YLLquh0b3xg7mbl4MHoUvQXEiotQDc/OSS_ELC_EU20_102020_Snackables_v1-01.jpg?format=750w 750w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvLuCTgGxUat1hWt6wmf1JX52nHwwMr3Dp4YLLquh0b3xg7mbl4MHoUvQXEiotQDc/OSS_ELC_EU20_102020_Snackables_v1-01.jpg?format=500w 500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvLuCTgGxUat1hWt6wmf1JX52nHwwMr3Dp4YLLquh0b3xg7mbl4MHoUvQXEiotQDc/OSS_ELC_EU20_102020_Snackables_v1-01.jpg?format=300w 300w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723686453-N0U704ABVI878FA1HMUE/ke17ZwdGBToddI8pDm48kGZkTHxSiNqnwUsFY6tX2kxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxvLuCTgGxUat1hWt6wmf1JX52nHwwMr3Dp4YLLquh0b3xg7mbl4MHoUvQXEiotQDc/OSS_ELC_EU20_102020_Snackables_v1-01.jpg?format=100w 100w"
+          sizes="100vw">
+        </amp-img>
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">Purpose-built observability solutions using open-source software (Open Source Summit Europe 2020)</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2020-10-26">
+            October 26, 2020
+          </time>
+          <small class="amp-article-author-name">Avthar Sewrathan</small>
+        </div>
+      </header>
+
+      
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="960"
+    height="540"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603724117384-JAJJD7PJJY5O0CVOUAJD/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-z/Slides%2b13794.png?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603724117384-JAJJD7PJJY5O0CVOUAJD/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/Slides+1.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603724117384-JAJJD7PJJY5O0CVOUAJD/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/Slides+1.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603724117384-JAJJD7PJJY5O0CVOUAJD/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/Slides+1.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603724117384-JAJJD7PJJY5O0CVOUAJD/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/Slides+1.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603724117384-JAJJD7PJJY5O0CVOUAJD/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/Slides+1.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603724117384-JAJJD7PJJY5O0CVOUAJD/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/Slides+1.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603724117384-JAJJD7PJJY5O0CVOUAJD/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/Slides+1.png?format=100w 100w">
+  </amp-img>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class="sqsrte-large"><em>Talk Recording, Slides and Resources from my talk at Open Source Summit Europe 2020</em></p>
+<p class="">I had the honor to speak on the topic <em>&quot;Purpose-built observability solutions using open-source software: Lessons from the Field&quot; </em>at the&nbsp;<a href="https://osseu2020.sched.com/event/eCHp/purpose-built-observability-solutions-using-open-source-software-lessons-from-the-field-avthar-sewrathan-timescale/" target="_blank">Open Source Summit Europe 2020</a>, an international technology and software conference.</p>
+<p class="">You can find my talk recording, slides and more information about the talk below.</p>
+<h2>Talk Recording</h2>
+<p class="">You can watch the full talk on Youtube at <a href="https://youtu.be/nMObJ8EEtXE">this link</a>. </p></div>
+
+
+
+
+<figure class="amp-article-video-block youtube-video">
+  <amp-youtube data-videoid="nMObJ8EEtXE"
+    layout="responsive"
+    width="1920"
+    height="1080">
+  </amp-youtube>
+
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><h2>Slides</h2></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="2270"
+    height="1105"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723733916-DV9YM6GUKG80QBYLO1XV/ke17ZwdGBToddI8pDm48kKvFfV09N_IAIpyBO0ZSfYF7gQa/OSS%2bSummit%2bSlides3794.png?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723733916-DV9YM6GUKG80QBYLO1XV/ke17ZwdGBToddI8pDm48kKvFfV09N_IAIpyBO0ZSfYF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdrKfXQY5mvw6sOz9N1uFXI_Wb3tn58fBwZFl4f2PteSZDqXZYzu2fuaodM4POSZ4w/OSS+Summit+Slides.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723733916-DV9YM6GUKG80QBYLO1XV/ke17ZwdGBToddI8pDm48kKvFfV09N_IAIpyBO0ZSfYF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdrKfXQY5mvw6sOz9N1uFXI_Wb3tn58fBwZFl4f2PteSZDqXZYzu2fuaodM4POSZ4w/OSS+Summit+Slides.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723733916-DV9YM6GUKG80QBYLO1XV/ke17ZwdGBToddI8pDm48kKvFfV09N_IAIpyBO0ZSfYF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdrKfXQY5mvw6sOz9N1uFXI_Wb3tn58fBwZFl4f2PteSZDqXZYzu2fuaodM4POSZ4w/OSS+Summit+Slides.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723733916-DV9YM6GUKG80QBYLO1XV/ke17ZwdGBToddI8pDm48kKvFfV09N_IAIpyBO0ZSfYF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdrKfXQY5mvw6sOz9N1uFXI_Wb3tn58fBwZFl4f2PteSZDqXZYzu2fuaodM4POSZ4w/OSS+Summit+Slides.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723733916-DV9YM6GUKG80QBYLO1XV/ke17ZwdGBToddI8pDm48kKvFfV09N_IAIpyBO0ZSfYF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdrKfXQY5mvw6sOz9N1uFXI_Wb3tn58fBwZFl4f2PteSZDqXZYzu2fuaodM4POSZ4w/OSS+Summit+Slides.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723733916-DV9YM6GUKG80QBYLO1XV/ke17ZwdGBToddI8pDm48kKvFfV09N_IAIpyBO0ZSfYF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdrKfXQY5mvw6sOz9N1uFXI_Wb3tn58fBwZFl4f2PteSZDqXZYzu2fuaodM4POSZ4w/OSS+Summit+Slides.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1603723733916-DV9YM6GUKG80QBYLO1XV/ke17ZwdGBToddI8pDm48kKvFfV09N_IAIpyBO0ZSfYF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdrKfXQY5mvw6sOz9N1uFXI_Wb3tn58fBwZFl4f2PteSZDqXZYzu2fuaodM4POSZ4w/OSS+Summit+Slides.png?format=100w 100w">
+  </amp-img>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class="sqsrte-large"><a href="https://drive.google.com/file/d/1lPGkryaQkc0HBJYiYS24GpgzN1lXmWPk/view?usp=sharing">➡️ Full slides </a></p>
+<p class="">These are the slides I used in the talk</p>
+<p class="sqsrte-large"><a href="https://drive.google.com/file/d/1sWKBF-ofgv7Ia3kU4CGm9xE6a7DhuTRs/view">➡️ Abridged slides </a></p>
+<p class="">These are summary slides for you to read, print or annotate</p>
+<p class="">The slides include links to resources for you to explore so be sure to look out for those near the end.</p>
+<h2>Why talk about this topic?</h2>
+<p class="">In my work as a developer advocate, I’ve worked with many DevOps practitioners who’ve turned to open source products to build their own bespoke observability solutions. I wanted to share their stories and hard-earned lessons and help others get an overview of how they can build similar systems using all open source components.</p>
+<h2>Abstract</h2>
+<p class="">Are proprietary monitoring solutions too clunky, rigid and expensive for the specific needs of your fast moving team? Join me as I detail how data collection, storage and visualization can be accomplished in simple, and cost effective ways using ALL open source software!</p>
+<p class="">You’ll hear stories from the field of how 3 different companies that I’ve worked with at Timescale have gone about implementing their open-source observability stack, how their configurations have fared and the pros and cons of each approach.</p>
+<p class="">We’ll also architect an application monitoring system using tools like Prometheus, PostgreSQL and Grafana. All of these technologies are open-source and provide the flexibility and extensibility to scale with your team’s needs.</p>
+<p class="">You’ll walk away with the foundation for how to implement your own observability system using open source software, as well as inspiration for how to proceed based on the real world experience of others.</p>
+<h2>Acknowledgements</h2>
+<p class="">I’m grateful for the help of folks on the amazing Timescale team, like Lacey Butler, Prashant Sridharan and Ryan Booz. </p>
+<p class="">This talk would also not be possible without the contributions of the engineers I interviewed for the talk: Sean Sube (WhenIWork), Miguel Farrajota (Jungle) and Sam Gichohi, Lee Hampton and Anthony Dodd (Timescale).</p></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="../blog.html" target="_blank"><em>Avthar Sewrathan</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+
+<!-- Mirrored from avthar.com/blog/oss-eu-2020?format=amp by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jun 2021 01:54:15 GMT -->
+</html>

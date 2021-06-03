@@ -1,0 +1,516 @@
+<!doctype html>
+<html amp>
+
+<!-- Mirrored from avthar.com/blog/rbs-starter-kit?format=amp by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jun 2021 01:54:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>Starter Kit: Your Reflected Best Self (RBS)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="rbs-starter-kit.html">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Starter Kit: Your Reflected Best Self (RBS)",
+      "mainEntityOfPage": "https://avthar.com",
+      
+      "url": "https://avthar.com/blog/rbs-starter-kit",
+      "author": {
+        "@type": "Person",
+        "name": "Avthar Sewrathan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "name": "Avthar Sewrathan"
+      },
+      
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=750w",
+        "width": 960,
+        "height": 540
+      },
+      
+      "datePublished": "2020-07-23",
+      "dateModified": "2020-07-29"
+    }
+  </script>
+  <script async src="../../cdn.ampproject.org/v0.js"></script>
+  
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="../index.html" target="_blank">Avthar Sewrathan</a></h1>
+      <small class="amp-view-original"><a href="rbs-starter-kit.html" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+        <amp-img
+          class="amp-article-main-image"
+          layout="responsive"
+          width="960"
+          height="540"
+          src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-z/RBS%2bStarter%2bKit3794.png?format=500w"
+          srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=2500w 2500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=1500w 1500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=1000w 1000w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=750w 750w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=500w 500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=300w 300w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561297124-YUBC5YF75R29J91QCFKU/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=100w 100w"
+          sizes="100vw">
+        </amp-img>
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">Starter Kit: Your Reflected Best Self (RBS)</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2020-07-23">
+            July 23, 2020
+          </time>
+          <small class="amp-article-author-name">Avthar Sewrathan</small>
+        </div>
+      </header>
+
+      
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="960"
+    height="540"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561342887-07SQPJ6DVTUBCJBZSZJI/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-z/RBS%2bStarter%2bKit3794.png?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561342887-07SQPJ6DVTUBCJBZSZJI/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561342887-07SQPJ6DVTUBCJBZSZJI/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561342887-07SQPJ6DVTUBCJBZSZJI/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561342887-07SQPJ6DVTUBCJBZSZJI/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561342887-07SQPJ6DVTUBCJBZSZJI/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561342887-07SQPJ6DVTUBCJBZSZJI/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561342887-07SQPJ6DVTUBCJBZSZJI/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/RBS+Starter+Kit.png?format=100w 100w">
+  </amp-img>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class="">If you’re looking to deepen your self-awareness, want to understand how you can make the best impact or just looking to be world class at what you do, the <a href="https://avthar.substack.com/p/how-to-find-your-strengths-part-2"><span>Reflected Best Self</span></a> (RBS) will take you to the next level.</p>
+<h2>Wait what is an RBS?</h2>
+<p class="">The RBS will help you examine the impact you’ve made on people in different parts of your life and nudge you to redesign your life around your strengths, so that you can maximize impact and personal fulfillment.&nbsp;</p>
+<p class="">I’ve written a step-by-step guide on how to find Your Reflected Best Self.</p>
+<ol data-rte-list="default">
+ <li><p class=""><a href="https://avthar.substack.com/p/how-to-find-your-strengths-part-2"><span>List 10+ people from different parts of your life</span></a></p></li>
+ <li><p class=""><a href="https://avthar.substack.com/p/how-to-find-your-strengths-part-2"><span>Ask them, “When was I at my best?” and collect their responses</span></a></p></li>
+ <li><p class="">Look for patterns in the responses</p></li>
+ <li><p class="">Compose your self portrait of who you are at your best</p></li>
+ <li><p class="">Redesign your life around your strengths</p></li>
+</ol>
+<p class="">Steps 1-2 are <a href="https://avthar.substack.com/p/how-to-find-your-strengths-part-2">Part 1</a> of the guide. Steps 3-5 are in Part 2.</p>
+<p class="">Now that you’ve seen all 5 steps of the Reflected Best Self Exercise, it’s your turn to try it and unlock a deeper understanding of your strengths and who you are at your best!</p>
+<h2>The RBS Starter Kit</h2>
+<p class="">To help you get started, I’ve put together an RBS Starter Kit to kickstart your journey.</p>
+<p class="">The starter kit contains scripts, templates and sample artifacts which I’ve developed for myself when doing my yearly RBS. I’m super excited to share them with you and hope they help you overcome the initial hurdle of resistance.</p>
+<p class=""><strong>For Step 2:</strong></p>
+<h3>📝<a href="https://docs.google.com/forms/d/1nk7mXku5ejIj5KOTPs94hJHnA2x8UK-2coYn3jK6Wl4/edit?usp=sharing"><span><strong>Template Google Form</strong></span></a>&nbsp;</h3>
+<p class="">Here’s a <a href="https://docs.google.com/forms/d/1nk7mXku5ejIj5KOTPs94hJHnA2x8UK-2coYn3jK6Wl4/edit?usp=sharing">template form</a> which you can copy and modify to use as your survey form.Do change the heading to include your name and modify the form description to your taste. Just Add a copy of this template to your google drive, change your name and you’re off to the races!</p></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="776"
+    height="785"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561672909-L75YRJSWX0ZB7XTQ8LXL/ke17ZwdGBToddI8pDm48kIupMNMsYwjwIWLHfPlVYbRZw-z/Sample%2bForm3794.png?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561672909-L75YRJSWX0ZB7XTQ8LXL/ke17ZwdGBToddI8pDm48kIupMNMsYwjwIWLHfPlVYbRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKiT36UF35v9V8VGt_8W31i8WzPWM1R3qgAMdkOreDVA/Sample+Form.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561672909-L75YRJSWX0ZB7XTQ8LXL/ke17ZwdGBToddI8pDm48kIupMNMsYwjwIWLHfPlVYbRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKiT36UF35v9V8VGt_8W31i8WzPWM1R3qgAMdkOreDVA/Sample+Form.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561672909-L75YRJSWX0ZB7XTQ8LXL/ke17ZwdGBToddI8pDm48kIupMNMsYwjwIWLHfPlVYbRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKiT36UF35v9V8VGt_8W31i8WzPWM1R3qgAMdkOreDVA/Sample+Form.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561672909-L75YRJSWX0ZB7XTQ8LXL/ke17ZwdGBToddI8pDm48kIupMNMsYwjwIWLHfPlVYbRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKiT36UF35v9V8VGt_8W31i8WzPWM1R3qgAMdkOreDVA/Sample+Form.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561672909-L75YRJSWX0ZB7XTQ8LXL/ke17ZwdGBToddI8pDm48kIupMNMsYwjwIWLHfPlVYbRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKiT36UF35v9V8VGt_8W31i8WzPWM1R3qgAMdkOreDVA/Sample+Form.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561672909-L75YRJSWX0ZB7XTQ8LXL/ke17ZwdGBToddI8pDm48kIupMNMsYwjwIWLHfPlVYbRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKiT36UF35v9V8VGt_8W31i8WzPWM1R3qgAMdkOreDVA/Sample+Form.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561672909-L75YRJSWX0ZB7XTQ8LXL/ke17ZwdGBToddI8pDm48kIupMNMsYwjwIWLHfPlVYbRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIKiT36UF35v9V8VGt_8W31i8WzPWM1R3qgAMdkOreDVA/Sample+Form.png?format=100w 100w">
+  </amp-img>
+  
+  	<figcaption class="amp-article-image-caption"><p style="text-align:center;white-space:pre-wrap;" class="">Sample google form to use in RBS Step 2</p></figcaption>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><h3>📲Message Scripts</h3>
+<p class="">Here’s the exact script I used to reach out to people in order to ask them to respond to the survey. You can use this verbatim or as the basis for your outreach message. I usually reached out to people in the place I talked with them, so Slack and email for co-workers, and text / Whatsapp/ Facebook for friends and family.</p>
+<p class=""><strong>For colleagues/ boss / professional contexts:</strong><br /></p></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="917"
+    height="336"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561728211-E77QXNCGH97XM9LAIXKZ/ke17ZwdGBToddI8pDm48kApR1nsv6ibDr8EUMp3LIDZZw-z/Work%2boutreach3794.png?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561728211-E77QXNCGH97XM9LAIXKZ/ke17ZwdGBToddI8pDm48kApR1nsv6ibDr8EUMp3LIDZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI44Qo317DMhRiZGc1E5qgUmmOJdBOMUPXIYwDtspbqUs/Work+outreach.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561728211-E77QXNCGH97XM9LAIXKZ/ke17ZwdGBToddI8pDm48kApR1nsv6ibDr8EUMp3LIDZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI44Qo317DMhRiZGc1E5qgUmmOJdBOMUPXIYwDtspbqUs/Work+outreach.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561728211-E77QXNCGH97XM9LAIXKZ/ke17ZwdGBToddI8pDm48kApR1nsv6ibDr8EUMp3LIDZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI44Qo317DMhRiZGc1E5qgUmmOJdBOMUPXIYwDtspbqUs/Work+outreach.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561728211-E77QXNCGH97XM9LAIXKZ/ke17ZwdGBToddI8pDm48kApR1nsv6ibDr8EUMp3LIDZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI44Qo317DMhRiZGc1E5qgUmmOJdBOMUPXIYwDtspbqUs/Work+outreach.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561728211-E77QXNCGH97XM9LAIXKZ/ke17ZwdGBToddI8pDm48kApR1nsv6ibDr8EUMp3LIDZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI44Qo317DMhRiZGc1E5qgUmmOJdBOMUPXIYwDtspbqUs/Work+outreach.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561728211-E77QXNCGH97XM9LAIXKZ/ke17ZwdGBToddI8pDm48kApR1nsv6ibDr8EUMp3LIDZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI44Qo317DMhRiZGc1E5qgUmmOJdBOMUPXIYwDtspbqUs/Work+outreach.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561728211-E77QXNCGH97XM9LAIXKZ/ke17ZwdGBToddI8pDm48kApR1nsv6ibDr8EUMp3LIDZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI44Qo317DMhRiZGc1E5qgUmmOJdBOMUPXIYwDtspbqUs/Work+outreach.png?format=100w 100w">
+  </amp-img>
+  
+  	<figcaption class="amp-article-image-caption"><p style="text-align:center;white-space:pre-wrap;" class="">Sample script for professional outreach</p></figcaption>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class=""><strong>For friends/ family:</strong></p></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="1172"
+    height="464"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561773119-XQKT7NRWETEI65FFF4VL/ke17ZwdGBToddI8pDm48kOCEDRxfZsJjLU541TzHYuMUqsx/Personal%2boutreach3794.png?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561773119-XQKT7NRWETEI65FFF4VL/ke17ZwdGBToddI8pDm48kOCEDRxfZsJjLU541TzHYuMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcakp2og5wJZ16UsTBZ-hrQOOGqkaK-WU57PG7XNuyHXovjFH1suDhmok5ogKowo-x/Personal+outreach.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561773119-XQKT7NRWETEI65FFF4VL/ke17ZwdGBToddI8pDm48kOCEDRxfZsJjLU541TzHYuMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcakp2og5wJZ16UsTBZ-hrQOOGqkaK-WU57PG7XNuyHXovjFH1suDhmok5ogKowo-x/Personal+outreach.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561773119-XQKT7NRWETEI65FFF4VL/ke17ZwdGBToddI8pDm48kOCEDRxfZsJjLU541TzHYuMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcakp2og5wJZ16UsTBZ-hrQOOGqkaK-WU57PG7XNuyHXovjFH1suDhmok5ogKowo-x/Personal+outreach.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561773119-XQKT7NRWETEI65FFF4VL/ke17ZwdGBToddI8pDm48kOCEDRxfZsJjLU541TzHYuMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcakp2og5wJZ16UsTBZ-hrQOOGqkaK-WU57PG7XNuyHXovjFH1suDhmok5ogKowo-x/Personal+outreach.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561773119-XQKT7NRWETEI65FFF4VL/ke17ZwdGBToddI8pDm48kOCEDRxfZsJjLU541TzHYuMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcakp2og5wJZ16UsTBZ-hrQOOGqkaK-WU57PG7XNuyHXovjFH1suDhmok5ogKowo-x/Personal+outreach.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561773119-XQKT7NRWETEI65FFF4VL/ke17ZwdGBToddI8pDm48kOCEDRxfZsJjLU541TzHYuMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcakp2og5wJZ16UsTBZ-hrQOOGqkaK-WU57PG7XNuyHXovjFH1suDhmok5ogKowo-x/Personal+outreach.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561773119-XQKT7NRWETEI65FFF4VL/ke17ZwdGBToddI8pDm48kOCEDRxfZsJjLU541TzHYuMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcakp2og5wJZ16UsTBZ-hrQOOGqkaK-WU57PG7XNuyHXovjFH1suDhmok5ogKowo-x/Personal+outreach.png?format=100w 100w">
+  </amp-img>
+  
+  	<figcaption class="amp-article-image-caption"><p style="text-align:center;white-space:pre-wrap;" class="">Sample script for personal outreach</p></figcaption>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class=""><strong>For Step 3:&nbsp;</strong></p>
+<h3>✍️<a href="https://docs.google.com/document/d/1Hf9zB0zkPib6RpDD76kzgQMKu32l1ETvtO-IWJtdwHo/edit?usp=sharing"><span><strong>Table to Analyze Patterns</strong></span></a></h3>
+<p class="">Here’s a link to a <a href="https://docs.google.com/document/d/1Hf9zB0zkPib6RpDD76kzgQMKu32l1ETvtO-IWJtdwHo/edit?usp=sharing">Google doc</a> containing an editable version of a table which you can use to organize your responses and find patterns and themes. I’ve included a sample theme from my 2020 RBS. You’re welcome to follow my format or use your own!</p></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="960"
+    height="540"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561876818-0Q76DHK1SSHFJGIJ53GQ/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-z/image-asset3794.png?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561876818-0Q76DHK1SSHFJGIJ53GQ/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/image-asset.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561876818-0Q76DHK1SSHFJGIJ53GQ/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/image-asset.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561876818-0Q76DHK1SSHFJGIJ53GQ/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/image-asset.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561876818-0Q76DHK1SSHFJGIJ53GQ/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/image-asset.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561876818-0Q76DHK1SSHFJGIJ53GQ/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/image-asset.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561876818-0Q76DHK1SSHFJGIJ53GQ/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/image-asset.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561876818-0Q76DHK1SSHFJGIJ53GQ/ke17ZwdGBToddI8pDm48kD33KhhWEodMJvcytjXFyvFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQVUjsvMYGrjk5P5guv3Gb1aPQrnDLhtGUJ-UJkarKCw/image-asset.png?format=100w 100w">
+  </amp-img>
+  
+  	<figcaption class="amp-article-image-caption"><p style="text-align:center;white-space:pre-wrap;" class="">Sample table to analyze themes from Step 3 of RBS</p></figcaption>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class=""><strong>For Step 4:</strong></p>
+<h3>🎨 Sample Self Portrait</h3>
+<p class="">Here’s a sample self portrait which you can use as inspiration for your own. This is a real self-portrait I created for myself in 2016/17. I’ve annotated it with suggestions and things to keep in mind:</p></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="1085"
+    height="760"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561909118-7TCCE2RJV5CCFM4N7JT8/ke17ZwdGBToddI8pDm48kM3paMjjtqEnAHqRyxxVjT0Uqsx/Sample%2bSelf%2bPortrait3794.png?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561909118-7TCCE2RJV5CCFM4N7JT8/ke17ZwdGBToddI8pDm48kM3paMjjtqEnAHqRyxxVjT0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcxh0gpQIR4dUkNKbSPTQ-O80TiL7P1dj30-rhU9XL--qbyFCpojTouXllMQkHYGv2/Sample+Self+Portrait.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561909118-7TCCE2RJV5CCFM4N7JT8/ke17ZwdGBToddI8pDm48kM3paMjjtqEnAHqRyxxVjT0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcxh0gpQIR4dUkNKbSPTQ-O80TiL7P1dj30-rhU9XL--qbyFCpojTouXllMQkHYGv2/Sample+Self+Portrait.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561909118-7TCCE2RJV5CCFM4N7JT8/ke17ZwdGBToddI8pDm48kM3paMjjtqEnAHqRyxxVjT0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcxh0gpQIR4dUkNKbSPTQ-O80TiL7P1dj30-rhU9XL--qbyFCpojTouXllMQkHYGv2/Sample+Self+Portrait.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561909118-7TCCE2RJV5CCFM4N7JT8/ke17ZwdGBToddI8pDm48kM3paMjjtqEnAHqRyxxVjT0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcxh0gpQIR4dUkNKbSPTQ-O80TiL7P1dj30-rhU9XL--qbyFCpojTouXllMQkHYGv2/Sample+Self+Portrait.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561909118-7TCCE2RJV5CCFM4N7JT8/ke17ZwdGBToddI8pDm48kM3paMjjtqEnAHqRyxxVjT0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcxh0gpQIR4dUkNKbSPTQ-O80TiL7P1dj30-rhU9XL--qbyFCpojTouXllMQkHYGv2/Sample+Self+Portrait.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561909118-7TCCE2RJV5CCFM4N7JT8/ke17ZwdGBToddI8pDm48kM3paMjjtqEnAHqRyxxVjT0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcxh0gpQIR4dUkNKbSPTQ-O80TiL7P1dj30-rhU9XL--qbyFCpojTouXllMQkHYGv2/Sample+Self+Portrait.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1595561909118-7TCCE2RJV5CCFM4N7JT8/ke17ZwdGBToddI8pDm48kM3paMjjtqEnAHqRyxxVjT0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcxh0gpQIR4dUkNKbSPTQ-O80TiL7P1dj30-rhU9XL--qbyFCpojTouXllMQkHYGv2/Sample+Self+Portrait.png?format=100w 100w">
+  </amp-img>
+  
+  	<figcaption class="amp-article-image-caption"><p style="text-align:center;white-space:pre-wrap;" class="">Sample self portrait for Step 4 of RBS</p></figcaption>
+  
+</figure>
+
+
+
+
+<hr class="amp-article-hr-block"/>
+
+
+
+
+<div class="amp-article-html-block"><p class=""><em>If you found this Starter Kit useful, be sure to </em><a href="https://avthar.substack.com/"><span><em>subscribe to Avthar’s weekly newsletter</em></span></a><em>. It’s where I share more </em><a href="https://avthar.substack.com/"><span><em>practical wisdom</em></span></a><em>, just like the RBS, all to help you level up your own life!</em></p>
+<p class=""><a href="https://avthar.substack.com/"><span><strong>Subscribe here</strong></span></a><br /></p></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="../blog.html" target="_blank"><em>Avthar Sewrathan</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+
+<!-- Mirrored from avthar.com/blog/rbs-starter-kit?format=amp by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jun 2021 01:54:18 GMT -->
+</html>

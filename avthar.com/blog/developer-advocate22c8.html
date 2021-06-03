@@ -1,0 +1,487 @@
+<!doctype html>
+<html amp>
+
+<!-- Mirrored from avthar.com/blog/developer-advocate?format=amp by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jun 2021 01:53:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>What the heck is a Developer Advocate?</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="developer-advocate.html">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "What the heck is a Developer Advocate?",
+      "mainEntityOfPage": "https://avthar.com",
+      "description": "What the heck is a developer advocate? I’ve never heard of that before, what do you do? I wrote this post to answer those questions, share how I became a developer advocate and offer advice to those considering becoming one. I also wrote this post for my family in South Africa, who keep asking me how to explain what exactly I’m doing in ‘America’ to my relatives back home. Here you go, Ma!",
+      "url": "https://avthar.com/blog/developer-advocate",
+      "author": {
+        "@type": "Person",
+        "name": "Avthar Sewrathan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "name": "Avthar Sewrathan"
+      },
+      
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=750w",
+        "width": 2500,
+        "height": 1667
+      },
+      
+      "datePublished": "2020-02-26",
+      "dateModified": "2020-07-29"
+    }
+  </script>
+  <script async src="../../cdn.ampproject.org/v0.js"></script>
+  
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="../index.html" target="_blank">Avthar Sewrathan</a></h1>
+      <small class="amp-view-original"><a href="developer-advocate.html" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+        <amp-img
+          class="amp-article-main-image"
+          layout="responsive"
+          width="2500"
+          height="1667"
+          src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa/image-asset3794.jpg?format=500w"
+          srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=2500w 2500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=1500w 1500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=1000w 1000w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=750w 750w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=500w 500w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=300w 300w,
+          https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756047219-QZ6GEL3M1PR6KBX8RZUY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=100w 100w"
+          sizes="100vw">
+        </amp-img>
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">What the heck is a Developer Advocate?</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2020-02-26">
+            February 26, 2020
+          </time>
+          <small class="amp-article-author-name">Avthar Sewrathan</small>
+        </div>
+      </header>
+
+      
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="2500"
+    height="1667"
+    src="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756602676-QH22ZBULEQA6PEN4FXCO/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/question?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756602676-QH22ZBULEQA6PEN4FXCO/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/question?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756602676-QH22ZBULEQA6PEN4FXCO/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/question?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756602676-QH22ZBULEQA6PEN4FXCO/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/question?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756602676-QH22ZBULEQA6PEN4FXCO/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/question?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756602676-QH22ZBULEQA6PEN4FXCO/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/question?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756602676-QH22ZBULEQA6PEN4FXCO/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/question?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756602676-QH22ZBULEQA6PEN4FXCO/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/question?format=100w 100w">
+  </amp-img>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class="">There’s a saying in Africa that goes, “You can’t be a doctor, if you’ve never seen a doctor.” Coming from South Africa, I could only imagine being a handful of things when I ‘grew up’: a doctor because my uncles were doctors, an engineer because that’s what my teachers said kids who were good at maths did, or an actuary because my parents saw a newspaper article about how actuaries make a lot of money. Fast forward to my second job out of college in the USA, I now find myself working in a role I never knew existed, much less imagined myself doing: a Developer Advocate.</p>
+<p class="">Right now you’re probably asking yourself: What the heck is a developer advocate? I’ve never heard of that before, what do you do? I wrote this post to answer those questions, share how I became a developer advocate and offer advice to those considering becoming one. I also wrote this post for my family in South Africa, who keep asking me how to explain what exactly I’m doing in ‘America’ to my relatives back home. Here you go, Ma!<br /><br /></p>
+<h3>What is a developer advocate?</h3>
+<p class="">Developer advocates (DAs) are typically found at companies who make products targeted at software developers, like, <a href="https://stripe.com/"><span>Stripe</span></a> (payments API), <a href="https://www.twilio.com/"><span>Twilio</span></a> (SMS API) and <a href="https://www.timescale.com/"><span>Timescale</span></a> (Databases). Contrary to what the title might suggest, developer advocates aren’t out there defending developers in court cases. Rather, the job of a developer advocate is to help software developers and engineers, the people creating software, to be successful at their jobs.&nbsp;</p>
+<p class="">DAs do this by deeply understanding the problems developers have and then build content, tools and sample apps to make it as easy as possible for them to accomplish their goals. I work at Timescale, a company that makes a particular kind of database, one focused on time-series data. So at a database company like Timescale, advocates might help developers set up monitoring for their kubernetes environments and use that data, or help them learn more about time-series data and how it’s useful in general.</p>
+<p class="">Developers hate<strong> </strong>being ‘marketed’ to, so DAs must earn the scarce currency of developer trust by being as helpful and authentic as possible, helping their employers product gain adoption in the process.</p>
+<p class=""><br /><br /></p>
+<h3>What does a developer advocate do?</h3></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="600"
+    height="371"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756732653-9YBQMNP2YNBOPENR9ALT/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-z/Average%2bWeeks_%2bTime%2bspent%2bby%2bActivity%2b3794.jpg?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756732653-9YBQMNP2YNBOPENR9ALT/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy1hOKnJ85M1NtRx4k-OI-Bc-HP7cFI7xYie6WcyIj3sREEwehV8f2NfUjcQ2Dftmo/Average%2BWeeks_%2BTime%2Bspent%2Bby%2BActivity%2B.jpg?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756732653-9YBQMNP2YNBOPENR9ALT/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy1hOKnJ85M1NtRx4k-OI-Bc-HP7cFI7xYie6WcyIj3sREEwehV8f2NfUjcQ2Dftmo/Average%2BWeeks_%2BTime%2Bspent%2Bby%2BActivity%2B.jpg?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756732653-9YBQMNP2YNBOPENR9ALT/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy1hOKnJ85M1NtRx4k-OI-Bc-HP7cFI7xYie6WcyIj3sREEwehV8f2NfUjcQ2Dftmo/Average%2BWeeks_%2BTime%2Bspent%2Bby%2BActivity%2B.jpg?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756732653-9YBQMNP2YNBOPENR9ALT/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy1hOKnJ85M1NtRx4k-OI-Bc-HP7cFI7xYie6WcyIj3sREEwehV8f2NfUjcQ2Dftmo/Average%2BWeeks_%2BTime%2Bspent%2Bby%2BActivity%2B.jpg?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756732653-9YBQMNP2YNBOPENR9ALT/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy1hOKnJ85M1NtRx4k-OI-Bc-HP7cFI7xYie6WcyIj3sREEwehV8f2NfUjcQ2Dftmo/Average%2BWeeks_%2BTime%2Bspent%2Bby%2BActivity%2B.jpg?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756732653-9YBQMNP2YNBOPENR9ALT/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy1hOKnJ85M1NtRx4k-OI-Bc-HP7cFI7xYie6WcyIj3sREEwehV8f2NfUjcQ2Dftmo/Average%2BWeeks_%2BTime%2Bspent%2Bby%2BActivity%2B.jpg?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756732653-9YBQMNP2YNBOPENR9ALT/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy1hOKnJ85M1NtRx4k-OI-Bc-HP7cFI7xYie6WcyIj3sREEwehV8f2NfUjcQ2Dftmo/Average%2BWeeks_%2BTime%2Bspent%2Bby%2BActivity%2B.jpg?format=100w 100w">
+  </amp-img>
+  
+  	<figcaption class="amp-article-image-caption"><p class="" style="white-space:pre-wrap;">Rough break down of how I spend my time as a DA in an average week</p></figcaption>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class="">There are 4 key components of the DA job: (1) Writing (2) Presenting (3) Building user empathy (4) Community building.&nbsp;</p>
+<p class=""><strong>DAs write</strong></p>
+<p class="">Developer advocates write. A lot. Communicating in a persuasive, authentic and helpful way is key to being a successful DA. DAs do many different kinds of writing:</p>
+<ul data-rte-list="default">
+ <li><p class="">Technical tutorials. These help developers accomplish a certain goal using specific technologies (e.g Monitoring your database using prometheus and PostgreSQL).</p></li>
+ <li><p class="">Explanations of technical concepts (e.g <a href="https://dzone.com/articles/time-series-for-developers-what-the-heck-is-time-s"><span>What is Time-series Data?</span></a>).</p></li>
+ <li><p class="">High-level pieces on problems that developers have and are looking to solve (e.g monitoring infrastructure using open-source technology).&nbsp;</p></li>
+</ul>
+<p class="">The written content isn’t just for the company blog. Advocates’ writing lives where software developers live: on technical blogs, forums like <a href="https://news.ycombinator.com/"><span>HackerNews</span></a> or websites that developers frequent, like <a href="https://dzone.com/"><span>DZone</span></a> or <a href="https://dev.to/"><span>DevTo</span></a>. Moreover, I often get to use my company’s product to do things that I find interesting, for example, <a href="https://blog.timescale.com/blog/analyzing-bitcoin-ethereum-and-4100-other-cryptocurrencies-using-postgresql-and-timescaledb/"><span>analyzing 4100+ cryptocurrencies from 2011-2019</span></a>.<br /></p>
+<p class=""><strong>DAs present and speak publicly</strong></p>
+<p class="">Developer Advocates talk about topics we’re interested in. Talks could be about a technical topic, like how to solve a certain engineering challenge or about a non-technical topic like our take on a certain industry or experience learning something new. For example, I’m speaking at the 2020 PostgreSQL Conference NYC about <a href="https://postgresconf.org/conferences/2020/program/proposals/prometheus-postgresql-how-and-why-to-use-postgresql-as-long-term-storage-for-metrics-98522ffe-046e-48a0-8171-51ac2a052ab0"><span>storing prometheus metrics in PostgreSQL</span></a>, as making the most of metrics data is an important topic for engineers building cloud-native products.</p></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="600"
+    height="371"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756797040-T7H9WUIORTGXRXV19YFH/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-z/Conference%2bWeeks_%2bTime%2bspent%2bby%2bActivity%2b.12e3794.dela?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756797040-T7H9WUIORTGXRXV19YFH/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy8PWuAMPyPaFwngX8GDn7KNQcdixTI9Rb5wn6HKqNmfoZ3vGA1BKyZylC5DHmr1EA/Conference+Weeks_+Time+spent+by+Activity+.png?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756797040-T7H9WUIORTGXRXV19YFH/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy8PWuAMPyPaFwngX8GDn7KNQcdixTI9Rb5wn6HKqNmfoZ3vGA1BKyZylC5DHmr1EA/Conference+Weeks_+Time+spent+by+Activity+.png?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756797040-T7H9WUIORTGXRXV19YFH/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy8PWuAMPyPaFwngX8GDn7KNQcdixTI9Rb5wn6HKqNmfoZ3vGA1BKyZylC5DHmr1EA/Conference+Weeks_+Time+spent+by+Activity+.png?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756797040-T7H9WUIORTGXRXV19YFH/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy8PWuAMPyPaFwngX8GDn7KNQcdixTI9Rb5wn6HKqNmfoZ3vGA1BKyZylC5DHmr1EA/Conference+Weeks_+Time+spent+by+Activity+.png?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756797040-T7H9WUIORTGXRXV19YFH/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy8PWuAMPyPaFwngX8GDn7KNQcdixTI9Rb5wn6HKqNmfoZ3vGA1BKyZylC5DHmr1EA/Conference+Weeks_+Time+spent+by+Activity+.png?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756797040-T7H9WUIORTGXRXV19YFH/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy8PWuAMPyPaFwngX8GDn7KNQcdixTI9Rb5wn6HKqNmfoZ3vGA1BKyZylC5DHmr1EA/Conference+Weeks_+Time+spent+by+Activity+.png?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582756797040-T7H9WUIORTGXRXV19YFH/ke17ZwdGBToddI8pDm48kNFpt3KGrYvTCbB2MXXDkHZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy8PWuAMPyPaFwngX8GDn7KNQcdixTI9Rb5wn6HKqNmfoZ3vGA1BKyZylC5DHmr1EA/Conference+Weeks_+Time+spent+by+Activity+.png?format=100w 100w">
+  </amp-img>
+  
+  	<figcaption class="amp-article-image-caption"><p class="" style="white-space:pre-wrap;">Rough break down of how I spend my time as a DA during conference weeks</p></figcaption>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class="">Developer Advocates also attend events, often around a certain theme (e.g The Internet of Things). At the events I’ve attended, I’ve often introduced people to Timescale and given them a short demo relevant to their use-case (see examples <a href="https://youtu.be/fY1DgS9e0HM"><span>here</span></a> and <a href="https://youtu.be/tjwbELyvCOU"><span>here</span></a>). Public speaking can go beyond live talks and also involves doing Youtube videos, webinars and even Twitch live-coding seminars.</p>
+<p class=""><br /></p>
+<p class=""><strong>DAs are developer focused and build empathy</strong></p>
+<p class="">Building a great product involves solving a painful problem. To do that well, you need to be grounded in the reality of the user and understand them deeply. Developer Advocates play an important role in bringing empathy for the user and their use-case to the product design process. DAs collect and synthesize feedback and advocate on behalf of customers with the product and engineering teams.&nbsp;</p>
+<p class="">One way DAs build empathy is through meeting developers (some who are users of their product, others who aren’t) and asking questions to understand their context, workflows, needs, goals and decision making processes.</p>
+<p class=""><br /></p>
+<p class=""><strong>DAs build community</strong></p>
+<p class="">Developer Advocates participate in existing technical communities (e.g communities around an open-source project like PostgreSQL) through meetups or conferences. DAs build relationships with the most active and influential members in those communities and try to help them grow the community.</p>
+<p class="">DAs also build community around their company’s product. One of my first projects at Timescale was to launch our <a href="https://www.timescale.com/timescale-heroes"><span>Timescale Heroes program</span></a>, which helps the enthusiastic and impactful community members further their careers by writing and speaking about how they use Timescale. Through the Heroes program, I’ve met folks who work on <a href="https://blog.timescale.com/blog/writing-it-metrics-from-netdata-to-timescaledb/"><span>Golden Globe winning animated films</span></a> and who are <a href="https://blueskyhq.in/"><span>using data to fight air pollution in India</span></a>.&nbsp;</p>
+<h3>How I became a developer advocate</h3></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="2500"
+    height="2467"
+    src="../../images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582762398958-GTKG1E77H8YTJMPVYEGP/ke17ZwdGBToddI8pDm48kAUILryJ2N2kR5jUFPVVIIN7gQa/AWS_Avthar_13794.jpg?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582762398958-GTKG1E77H8YTJMPVYEGP/ke17ZwdGBToddI8pDm48kAUILryJ2N2kR5jUFPVVIIN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nQwvinDXPV4EYh2MRzm-RQI-MSYllih3A461D7ZLSG2aKnzF2pJTFAp4vb8Nv60fQ/AWS_Avthar_1.jpg?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582762398958-GTKG1E77H8YTJMPVYEGP/ke17ZwdGBToddI8pDm48kAUILryJ2N2kR5jUFPVVIIN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nQwvinDXPV4EYh2MRzm-RQI-MSYllih3A461D7ZLSG2aKnzF2pJTFAp4vb8Nv60fQ/AWS_Avthar_1.jpg?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582762398958-GTKG1E77H8YTJMPVYEGP/ke17ZwdGBToddI8pDm48kAUILryJ2N2kR5jUFPVVIIN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nQwvinDXPV4EYh2MRzm-RQI-MSYllih3A461D7ZLSG2aKnzF2pJTFAp4vb8Nv60fQ/AWS_Avthar_1.jpg?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582762398958-GTKG1E77H8YTJMPVYEGP/ke17ZwdGBToddI8pDm48kAUILryJ2N2kR5jUFPVVIIN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nQwvinDXPV4EYh2MRzm-RQI-MSYllih3A461D7ZLSG2aKnzF2pJTFAp4vb8Nv60fQ/AWS_Avthar_1.jpg?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582762398958-GTKG1E77H8YTJMPVYEGP/ke17ZwdGBToddI8pDm48kAUILryJ2N2kR5jUFPVVIIN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nQwvinDXPV4EYh2MRzm-RQI-MSYllih3A461D7ZLSG2aKnzF2pJTFAp4vb8Nv60fQ/AWS_Avthar_1.jpg?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582762398958-GTKG1E77H8YTJMPVYEGP/ke17ZwdGBToddI8pDm48kAUILryJ2N2kR5jUFPVVIIN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nQwvinDXPV4EYh2MRzm-RQI-MSYllih3A461D7ZLSG2aKnzF2pJTFAp4vb8Nv60fQ/AWS_Avthar_1.jpg?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/5e50ac0a8bf5a551ea5e5f85/1582762398958-GTKG1E77H8YTJMPVYEGP/ke17ZwdGBToddI8pDm48kAUILryJ2N2kR5jUFPVVIIN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nQwvinDXPV4EYh2MRzm-RQI-MSYllih3A461D7ZLSG2aKnzF2pJTFAp4vb8Nv60fQ/AWS_Avthar_1.jpg?format=100w 100w">
+  </amp-img>
+  
+  	<figcaption class="amp-article-image-caption"><p class="" style="white-space:pre-wrap;">Talking to developers at an Amazon Web Services Conference in Las Vegas, NV in 2019</p></figcaption>
+  
+</figure>
+
+
+
+
+<div class="amp-article-html-block"><p class="">I never set out to become a developer advocate. On the contrary, I was influenced by my social environment into coveting prestigious or high-paying jobs that others valued, like being a Google Software Engineer, all the while feeling uneasy and struggling with the question “What career path is the right one for me?”.</p>
+<p class="">I’ve found that a useful approach to finding the career or job to which I’m best suited, is to do things that align with my curiosity and focus on my unique strengths. <strong>Now, we’re not always aware of our strengths, so sometimes it takes others to point them out to us.&nbsp;</strong></p>
+<p class="">I was fortunate to have this happen to me, when when my new manager at Timescale (who was previously a developer advocate or built developer relations teams at Facebook, Twitter, Amazon and Microsoft), noticed that I had a unique blend of well developed technical skills and strong communication skills and thought I’d be “a natural” developer advocate.&nbsp;</p>
+<p class="">I was hesitant at first, I felt the job didn’t sound prestigious or credible enough. What convinced me was my new manager’s observation that he found it odd that I wasn’t using my public speaking skills in my current position, as he watched my <a href="https://youtu.be/MrXDVHogoc0"><span>TEDx talk on health and fitness</span></a> and enjoyed it.&nbsp;</p>
+<p class="">I was excited at the prospect of speaking and presenting again. I had enjoyed and excelled at public speaking throughout my life: I was that kid in class who enjoyed presentations, while other students hated them, I excelled at competitive debate in high school and in college (shoutout to my WSDC, BP and APDA friends) and I felt most alive pitching investors and users for the startup I co-founded during college.</p>
+<p class="">His observation reminded me that as much as I’ve been successful through struggle and hard work, I’ve enjoyed greater success by doing things that came ‘naturally to me’ - by doing things that felt like play to me, but others saw as hard work.&nbsp;</p>
+<p class="">After reflection, I found that the skills required to become a successful developer advocate (presenting, writing, empathy and community building) were things I had done in the past and enjoyed and also skills I wanted to improve. That made me view being a developer advocate as an opportunity to focus on my strengths and and develop mastery in them. So I took my new manager up on his offer to become a DA, and the rest is history.</p>
+<h3>Transferable Skills</h3>
+<p class="">One reason why It’s difficult to find high-quality developer advocates is because most of the skills required to excel at the DA role overlap with those of being a good founder. As a former (and probably future) founder, I think there’s a lot of truth there. DAs and founders both:</p>
+<ul data-rte-list="default">
+ <li><p class=""><strong>Build relationships.</strong> Founders build relationships with investors, employees and advisors, while DAs build relationships with developer communities in various industries and users of a specific technology. Both need to understand the needs and incentives of the people they build relationships with and how they can help them be successful.</p></li>
+ <li><p class=""><strong>Speak and write persuasively. </strong>Founders develop compelling pitches to secure investors, employees and customers. DAs write and speak to share their experience and help developers solve a specific problem. Both need to be good at this to succeed.</p></li>
+ <li><p class=""><strong>Empathize with the user.</strong> Both founders and DAs constantly talk to users to&nbsp; understand their context, needs, goals and decision making process. This is necessary for building a great product and for their product to gain adoption.</p></li>
+ <li><p class=""><strong>Write code.</strong> Both DAs and founders are technically competent, in order to understand their product, and both build demos and MVPs to test ideas quickly.</p></li>
+ <li><p class=""><strong>Learn and experiment constantly. </strong>Both founders and DAs constantly operate on the edge of their knowledge and are always learning more about their industry and their users. Both run experiments to discover the best way to delight users and help them be successful.</p></li>
+</ul>
+<h3>Want to be a Developer Advocate? Here’s how...</h3>
+<p class="">Being a DA is the most fun job in tech. After reading this far, perhaps you’re interested in becoming a developer advocate too? Here are some actionable steps you can take to develop the skills of a developer advocate that will set you on your way:</p>
+<p class=""><strong>Keep a blog. </strong>Write about the ideas, technologies and products that most interest you and why you find them fascinating. You can also write about the products, ideas or technologies you’ve found most useful and explain how they’ve impacted you or helped you do a specific job. You could also share your best practices for common tasks in your life, e.g your go to stack or tools for building monitoring your apps or your go to IDE.</p>
+<p class=""><strong>Teach what you learn. </strong>Create written or video tutorials teaching people things you’ve learned. Post them on your blog or on Youtube. Teaching helps you find gaps in your knowledge, which you can then fill to become even more proficient.</p>
+<p class=""><strong>Document and share. </strong>Document what you build and the journey of completing your various projects. This helps others see the real side of building something and help them become more at peace with their own emotional struggles when doing something new. Showing your work in public gets you used to the very public-facing nature of being a DA.</p>
+<p class=""><strong>Become part of developer communities.</strong> Attend events like meetups or conferences where you can meet other developers who are passionate about their job, or about a certain product or technology. If you can’t find any events that interest you, start one! If you there’s nothing in your vicinity, Twitter is a good place to make like-minded friends online in the tech space.</p>
+<p class=""><strong>Talk about things you’re curious about. </strong>Give talks and presentations about things you’re interested in at the events you attend. You could also start a podcast and use that as a vehicle to speak about your interests and have conversations with people you find interesting. Vlogging on Youtube is also great for this.</p>
+<p class=""><strong>Ship Often. </strong>Build things you’re interested in or build things to solve problems you have and release them into the world. Ship early and often, but revise and iterate according to the feedback you get. This also gets you ready for the intensity and face-paced nature of the DA job.</p>
+<p class=""><strong>Keep learning and following your curiosity. </strong>Let your interests guide you and keep exploring and digging deeper into the topics that you’re curious about.</p>
+<p class="">If you’re applying to be a Developer Advocate at a specific company, think about how you can demonstrate your understanding of that company’s product and their target user, as well as how you can reduce the friction to that user getting started and getting value quickly from the product. Perhaps write a tutorial or blog that would solve the problem.</p>
+<p class="">If you’re graduating from a CS degree program or want to found a startup in future (particularly one focused on developers), consider looking into developer advocacy as stepping stone to founding your next company by sharpening your technical and “soft” skills.</p>
+<p class="">Lastly, it’s worth noting that there’s usually two kinds of DAs: Type 1 DAs are people who were developers but then transition to, or additionally take on the role of, developer advocate. Type 2 DAs are people who weren’t professional software engineers but have the technical and communication skills to excel in the DA role. I consider myself a Type 2 DA and my perspectives and advice reflect that path. If you’re interested in hearing from Type 1 DAs and their perspective on the role, I’d recommend reading <a href="https://medium.com/@ashleymcnamara/what-is-developer-advocacy-3a92442b627c"><span>this piece</span></a> by Ashley McNamara and <a href="https://www.freecodecamp.org/news/what-the-heck-is-a-developer-advocate-87ab4faccfc4/"><span>this piece</span></a> by Wassim Chegham. For more on the developer advocacy function, <a href="https://www.amazon.com/Business-Value-Developer-Relations-Communities/dp/1484237471/ref=sr_1_2?keywords=developer+relations&amp;qid=1582687477&amp;sr=8-2"><span>The Business Value of Developer Relations</span></a> is a good place to start.</p></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="../blog.html" target="_blank"><em>Avthar Sewrathan</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+
+<!-- Mirrored from avthar.com/blog/developer-advocate?format=amp by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jun 2021 01:53:49 GMT -->
+</html>
